@@ -1,9 +1,5 @@
-var x = 120;
-var y = 45;
-
-let a = x;
-let b = y;
-let r = 0;
+let a = 120;
+let b = 45;
 
 while (b != 0) {
     r = a % b;
