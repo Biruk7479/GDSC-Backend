@@ -37,7 +37,19 @@ function deleteStudent(id) {
     students=students.filter(student=>student.id!==id);
 }
 
-// Adding example students
+
+
+function savejson() {
+    return JSON.stringify(students);
+}
+
+function loadjson(jsonString) {
+    students = JSON.parse(jsonString);
+}
+
+
+
+
 addStudent("UGR/2723/15","Amanuel Zelalem",20, 2,"Med", "Sefere Selam",3.4);
 addStudent("UGR/2771/15", "Marta Tesfaye",21, 3,"Computer Science","4kilo",3.6);
 addStudent("UGR/2772/15","Kaleab Kassa",22,4,"Civil Engineering", "AAiT",3.2);
@@ -61,3 +73,12 @@ addStudent("UGR/2784/15","Yared Bekele",24,4, "Chemical Engineering","AAiT", 3.1
 console.log(findStudent("UGR/2723/15"));
 // deleteStudent("UGR/2771/15");
 // console.log(listStudents());
+
+
+
+//////////////////////////////////////////////json stringify and parse function calling////////////////////////////
+const jsonString = savejson();
+console.log(jsonString);
+
+loadjson(jsonString);
+console.log(listStudents());
