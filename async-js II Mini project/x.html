@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+        body {
+            font-family: 'Times New Roman';
+            text-align: center;
+            margin-top: 250px;
+        }
+        #timer {
+            font-size: 48px;
+            margin-top: 20px;
+        }
+        .btn{
+            padding: 5px;
+            background-color: rgb(58, 230, 58);
+        }
+        .btn:hover{
+            background-color: rgb(255, 78, 78);
+        }
+        .inpt{
+            padding: 5px 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Countdown Timer</h1>
+    <input class="inpt" type="number" id="seconds" placeholder="Enter seconds">
+    <button class="btn" onclick="startTimer()">Start</button>
+    <div id="timer">0</div>
+
+    <script src="index.js"></script>
+</body>
+</html>
